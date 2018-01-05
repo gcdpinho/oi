@@ -45,11 +45,20 @@ and open the template in the editor.
             </ul>
         </div>
     </nav>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item active">
+            <a href="#">Tipo</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#">Mensagem</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#">Data</a>
+        </li>
+    </ol>   
     <section id="home">
         <div class="container text-center">
-            <h2 class="mt2">Tipo
-                <span>>Mensagem>Data</span>
-            </h2>
+
             <h4 class="mt2 mb2">Tipo de Mensagem</h4>
             <form id="type-message" action="" class="text-center">
                 <input type="radio" name="message" value="sms"> SMS
@@ -58,7 +67,7 @@ and open the template in the editor.
             <div class="row mb2">
                 <div class="col">
                     <h4 class="mt2 mb2">Tipo de Campanha</h4>
-                    <select id="box1">
+                    <select class="form-control" id="box1">
                         <option />
                         <option value="Vendas">Vendas</option>
                         <option value="Informativa">Informativa</option>
@@ -67,7 +76,7 @@ and open the template in the editor.
                 </div>
                 <div class="col">
                     <h4 class="mt2 mb2">Segmento de Campanha</h4>
-                    <select id="box2">
+                    <select class="form-control" id="box2">
                         <option />
                         <option value="Alimentos">Alimentos</option>
                         <option value="Viagens">Viagens</option>

@@ -47,10 +47,19 @@ and open the template in the editor.
             </ul>
         </div>
     </nav>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="#">Tipo</a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="#">Mensagem</a>
+        </li>
+        <li class="breadcrumb-item active">
+            <a href="#">Data</a>
+        </li>
+    </ol>
     <section id="data">
         <div class="container text-center">
-            <h2 class="mt2">
-                <span>Tipo>Mensagem></span>Data</h2>
             <h4 class="mt2 mb2">Data de Envio</h4>
             <input type="text" name="0" id="input-data" class="form-control" required>
             <!--
@@ -77,10 +86,11 @@ and open the template in the editor.
                 </form>
             </div>
         -->
+
+            <button type="button" id="next" class="btn btn-primary mt2 mb2">Enviar</button>
             <div class="alert alert-danger mt2">
                 <strong>Atenção:</strong> formato de data inválido, tente novamente.
             </div>
-            <button type="button" id="next" class="btn btn-primary mt2 mb2">Enviar</button>
         </div>
     </section>
     <div class="sk-fading-circle">
