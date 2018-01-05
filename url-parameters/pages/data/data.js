@@ -1,6 +1,10 @@
 jQuery(function ($) {
 	'use strict';
-	$('#input-data').mask('99/99/9999 99:99');
+	jQuery.datetimepicker.setLocale('pt-BR');
+	$('#input-data').datetimepicker({
+		mask:true,
+		format: 'd/m/Y H:i'
+	});
 	$('#next').click(function () {
 		if ($('#input-data').val() == "") {
 			$('#data .alert').removeClass("animated fadeOut");
