@@ -57,28 +57,27 @@ and open the template in the editor.
             <div class="row mt2 mb2">
                 <div class="col bd">
                     <h4 class="mt2 mb2">Evolução das Campanhas</h4>
-                    <img class="graf0 mb2" src="../../img/oi.png">
+                    <canvas id="lineChart"></canvas>
                 </div>
                 <div class="col bd">
                     <h4 class="mt2 mb2">Taxa de Conversão de Clicks</h4>
                     <div class="row clicks">
-                        <img class="hist" src="../../img/oi.png">
-                        <img class="hist" src="../../img/oi.png">
+                        <img class="hist" src="../../img/ic_money.png">
+                        <img class="hist" id="ic-pointer" src="../../img/ic_pointer.png">
                     </div>
 
                 </div>
             </div>
             <div class="col bd text-center all">
                 <h4 class="mt2">Dashboard</h4>
-                <div class="row mt2">
-                    <img class="graf" src="../../img/oi.png">
-                    <img class="graf" src="../../img/oi.png">
+                <div class="row canvas">
+                    <canvas id="barChart"></canvas>
                 </div>
-                <div class="row mt2 mb2">
-                    <img class="graf" src="../../img/oi.png">
+                <div class="row canvas">
+                    <canvas id="pieChart"></canvas>
                 </div>
             </div>
-            <a id="detalhes" href="#">Consulte seu extrato</a>
+            <a id="detalhes" href="#">Consulte detralhes das campanhas passadas</a>
             <div class="alert alert-danger">
                 <strong>Atenção:</strong> selecione um /opcao/.
             </div>
@@ -88,6 +87,7 @@ and open the template in the editor.
     <script src="../../js/jquery.js"></script>
     <script src="../../js/tether.js"></script>
     <script src="../../js/bootstrapv4.js"></script>
+    <script src="../../js/mdb.min.js"></script>
     <script src="historico.js"></script>
 </body>
 

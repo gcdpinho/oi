@@ -189,6 +189,7 @@ ul.nostyle i {
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
+    background-color: #FFF;
 }
 
 .navbar.navbar-default .navbar-toggle {
@@ -1175,14 +1176,15 @@ ul.nostyle i {
 .breadcrumb {
     display: flex;
     margin-top: 25px;
-    background-color: #fff; 
+    background-color: #fff;
     justify-content: center;
 }
-.breadcrumb-item a{
+
+.breadcrumb-item a {
     color: #000;
 }
 
-.breadcrumb-item.active a{
+.breadcrumb-item.active a {
     color: #d82482;
 }
 
@@ -1252,7 +1254,7 @@ ul.nostyle i {
 
 nav {
     background: white !important;
-    border-bottom: 2px solid #9a2eff;
+    border-bottom: 1px solid #ccc;
 }
 
 .nav-item {
@@ -1266,10 +1268,42 @@ nav {
 }
 
 .nav-item.active .nav-link {
-    background: #9a2eff !important;
-    color: white !important;
-    border-radius: 5px;
-    font-weight: bold;
+    color: #9a2eff !important;
+}
+
+.nav-item a {
+    position: relative;
+    display: block;
+    padding: 16px 0;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
+    color: #000;
+}
+
+.nav-item a::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #9a2eff;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s, transform 0.2s ease-out;
+}
+
+.nav-item a:active::before {
+    background-color: #000;
+}
+
+.nav-item a:hover::before,
+a:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
 }
 
 .mt2 {
@@ -1278,6 +1312,22 @@ nav {
 
 .mb2 {
     margin-bottom: 2rem;
+}
+
+canvas#pieChart {
+    width: 50% !important;
+    height: 50% !important;
+}
+
+.row.canvas {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 15px;
+}
+
+#ic-pointer {
+    height: 65px;
+    width: 65px;
 }
 
 #home,
@@ -1345,8 +1395,8 @@ textarea {
 }
 
 .bd {
-    border: 1px solid #868686;
-    border-radius: 5px;
+    border: 1px solid #d82482;
+    border-radius: 0px;
     width: 60%;
     margin: auto;
 }
